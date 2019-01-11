@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using aspnetcoreapp.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -19,7 +20,7 @@ namespace aspnetcoreapp.Pages
             var formkeys = HttpContext.Request.Form.Keys;
             if (formkeys != null && formkeys.Any())
             {
-
+                XmlHelper.Read();
             }
         }
     }
