@@ -5,6 +5,10 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="XmlConfig\Studentlist.xml" />
+    <None Remove="XmlConfig\ZuFu.xml" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <Content Include="Pages\_ViewImports.cshtml" />
@@ -19,5 +23,8 @@
     <Content Include="wwwroot\js\site.min.js" />
     <Content Include=".vscode\launch.json" />
     <Content Include="Pages\Error.cshtml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="XmlConfig\" />
   </ItemGroup>
 </Project>

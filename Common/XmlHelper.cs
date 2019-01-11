@@ -9,10 +9,16 @@ namespace aspnetcoreapp.Common
     {
         public XmlHelper() { }
 
-
-        public static List<> Read(string path, string Node, string attribute)
+        private static string xmlPath
         {
-            
+            get
+            {
+                return "";
+            }
+        }
+        public static List<Student> Read()
+        {
+            return new List<Student>();
         }
     }
 }
