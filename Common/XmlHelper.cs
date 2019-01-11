@@ -14,14 +14,14 @@ namespace aspnetcoreapp.Common
         {
             get
             {
-                return ConfigHelp.GetSite("XmlStudentPath");
+                return AppDomain.CurrentDomain.BaseDirectory+ ConfigHelp.GetSite("XmlStudentPath");
             }
         }
         private static string XmlZfPath
         {
             get
             {
-                return ConfigHelp.GetSite("XmlZfPath");
+                return AppDomain.CurrentDomain.BaseDirectory + ConfigHelp.GetSite("XmlZfPath");
             }
         }
         public static List<Student> Read()
