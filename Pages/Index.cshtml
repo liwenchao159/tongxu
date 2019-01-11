@@ -1,0 +1,69 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "2019年汝阳一高99级三班同学聚会";
+}
+<h2 class="head"><strong>2019年汝阳一高99级三班同学聚会报名</strong></h2>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/classmeters/tongxue.jpg" alt="Microsoft Azure" class="img-responsive" />
+        </div>
+        <div class="item">
+            <img src="~/images/classmeters/tongxue.jpg" alt="Microsoft Azure" class="img-responsive" />
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h4 class="color_c"><strong>班长寄语</strong></h4>
+        <p class="color_c"><strong>99级3班的同学们：岁月不居，时节如流，不知不觉我们相识20年，在这20年我虽不经常在一起，但有我们美好的回忆，所以我倡议过年同学们聚下，条件允许的话我们报个名！你心中的那个他，他心中的那个你，你心中的那个她，她心中那个你，你心中的那个我，我心中的那个你，在20年的岁月里，是否绿了芭蕉红了樱桃？多想当面感谢你给我生命中留下美好回忆！</p>
+    </div>
+    <div class="col-md-2">
+        <h2>报名信息</h2>
+            <form class="form-horizontal"  method="post">
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">姓   名:</label>
+                <div class="controls">
+                <input type="text" name="name" id="inputEmail" placeholder="请输入您的名字">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="inputMobile">手机号:</label>
+                <div class="controls">
+                <input type="text"  name="mobile" id="inputMobile" placeholder="请输入你的手机号">
+                </div>
+            </div>
+               <div class="control-group">
+                <label class="control-label" for="inputTime">建议时间:</label>
+                <div class="controls">
+                <input type="text"  name="time"  id="inputTime" placeholder="请输入你的建议聚会时间">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label"></label>
+                <button type="submit" class="btn">保存</button>
+                </div>
+            </div>
+            </form>
+    </div>
+    <div class="col-md-3">
+        <h4 class="color_c"><strong>微信群组二维码</strong></h4>
+        <img src="~/images/classmeters/wxqun.jpg" alt="Microsoft Azure" class="img-class" />
+    </div>
+</div>
